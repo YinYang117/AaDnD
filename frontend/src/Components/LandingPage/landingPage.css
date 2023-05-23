@@ -1,0 +1,57 @@
+/* Overall Styles */
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f3;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .landing-page__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .landing-page__title {
+    font-size: 32px;
+    color: #704818;
+  }
+  
+  /* Content Styles */
+  .landing-page__section {
+    margin-bottom: 40px;
+  }
+  
+  .landing-page__section-title {
+    font-size: 24px;
+    color: #704818;
+    margin-bottom: 10px;
+  }
+  
+  .landing-page__section-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .landing-page__section-list {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .landing-page__section-list-item {
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Styles */
+  .landing-page__footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .landing-page__footer-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Add more styles as needed */
+  
