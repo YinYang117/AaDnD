@@ -7,16 +7,26 @@ Welcome to the Dungeons & Dragons Game project! This is a web-based application 
 To run the application locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/YinYang117/AaDnD.git` or `git@github.com:YinYang117/AaDnD.git`
-2. Install dependencies in frontend and backend: `npm install`
-3. Start the development server: `cd BackendExpress && npm start`
+3. Front end not setup yet
+2. Install dependencies: cd into BackendExpress: `npm i`
+3. Start the development server: from BackendExpress: `npm start`
 
-The application should now be running on [http://localhost:3000](http://localhost:3000). Open this URL in your browser to access the game.
+The application should now be running on [http://localhost:3000](http://localhost:3000). Open this URL in your browser to access the app.
 
 ## Roadmap
 
 Here's a roadmap outlining the planned features and enhancements for future releases:
 
 ### Version 0.1
+
+- Create a character as a javascript object for a reference / example.
+- Create a character in JSON for a reference / example.
+- Repeat these steps for example NPC's, monsters, locations, quests, and items.
+
+- Create code that will take in a character object and run it against 
+
+
+
 
 - Add character creation system
 - Implement dice rolling functionality for skill checks and combat
