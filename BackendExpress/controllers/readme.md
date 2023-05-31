@@ -1,0 +1,1 @@
+The controllers folder contains files that hold the logic for handling different types of routes. For example, a characterController.js file would contain functions to handle character-related requests.

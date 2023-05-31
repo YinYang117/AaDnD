@@ -1,6 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
+/*
+  These routes are placeholders. You can totally change this file
+  if you rearrange / replace any of the .html files they are linked to.
+*/
+
+
 // Splash page
 router.get('/', function(req, res, next) {
   res.sendFile('splash.html', { root: './frontend' });
