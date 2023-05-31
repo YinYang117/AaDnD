@@ -7,8 +7,8 @@ Welcome to the Dungeons & Dragons Game project! This is a web-based application 
 To run the application locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/YinYang117/AaDnD.git` or `git@github.com:YinYang117/AaDnD.git`
-2. Install dependencies: `npm i`
-3. Start the development server: `npm start`
+2. Install dependencies in frontend and backend: `npm install`
+3. Start the development server: `cd BackendExpress && npm start`
 
 The application should now be running on [http://localhost:3000](http://localhost:3000). Open this URL in your browser to access the game.
 
@@ -73,3 +73,7 @@ This project is licensed under the [MIT License](LICENSE).
 ### `npm run build`
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Backend Port
+
+Currently set to 5500

@@ -28,13 +28,13 @@ app.use(function(req, res, next) {
   next(error);
 });
 
-// app.use(function(error, req, res, next) {
-//   res.status(error.status || 500);
-//   res.render('error', {
-//     message: error.message,
-//     error: req.app.get('env') === 'development' ? error : {}
-//   });
-// });
+app.use(function(error, req, res, next) {
+  res.status(error.status || 500);
+  res.render('error', { // render not finalized
+    message: error.message,
+    error: req.app.get('env') === 'development' ? error : {}  // not finalized
+  });
+});
 
 
 module.exports = app;

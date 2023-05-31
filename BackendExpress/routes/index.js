@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// Home page or splash page
+// Splash page
 router.get('/', function(req, res, next) {
-  res.sendFile('index.html', { root: './frontend' });
+  res.sendFile('splash.html', { root: './frontend' });
 });
 
 // Login page
@@ -14,6 +14,26 @@ router.get('/login', function(req, res, next) {
 // User page
 router.get('/user/:id', function(req, res, next) {
   res.sendFile('user.html', { root: './frontend' });
+});
+
+// Character Details
+router.use(function(req, res) {
+  res.sendFile('characterDetails.html', { root: './frontend' });
+});
+
+// Non Player Character Details
+router.use(function(req, res) {
+  res.sendFile('npcDetails.html', { root: './frontend' });
+});
+
+// Location Details
+router.use(function(req, res) {
+  res.sendFile('locationDetails.html', { root: './frontend' });
+});
+
+// Quest Details
+router.use(function(req, res) {
+  res.sendFile('questDetails.html', { root: './frontend' });
 });
 
 // 404 page
