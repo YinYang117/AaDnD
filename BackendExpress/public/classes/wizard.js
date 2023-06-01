@@ -1,5 +1,5 @@
 let wizard = {
-    index: 'wizard',
+    
     name: 'Wizard',
     hit_die: 6,
     proficiency_choices: [
@@ -12,40 +12,40 @@ let wizard = {
     ],
     proficiencies: [
       {
-        index: 'daggers',
+        
         name: 'Daggers',
         url: '/api/proficiencies/daggers'
       },
-      { index: 'darts', name: 'Darts', url: '/api/proficiencies/darts' },
+      {  name: 'Darts', url: '/api/proficiencies/darts' },
       {
-        index: 'slings',
+        
         name: 'Slings',
         url: '/api/proficiencies/slings'
       },
       {
-        index: 'quarterstaffs',
+        
         name: 'Quarterstaffs',
         url: '/api/proficiencies/quarterstaffs'
       },
       {
-        index: 'crossbows-light',
+        
         name: 'Crossbows, light',
         url: '/api/proficiencies/crossbows-light'
       },
       {
-        index: 'saving-throw-int',
+        
         name: 'Saving Throw: INT',
         url: '/api/proficiencies/saving-throw-int'
       },
       {
-        index: 'saving-throw-wis',
+        
         name: 'Saving Throw: WIS',
         url: '/api/proficiencies/saving-throw-wis'
       }
     ],
     saving_throws: [
-      { index: 'int', name: 'INT', url: '/api/ability-scores/int' },
-      { index: 'wis', name: 'WIS', url: '/api/ability-scores/wis' }
+      {  name: 'INT', url: '/api/ability-scores/int' },
+      {  name: 'WIS', url: '/api/ability-scores/wis' }
     ],
     starting_equipment: [ { equipment: [Object], quantity: 1 } ],
     starting_equipment_options: [
@@ -72,14 +72,14 @@ let wizard = {
     multi_classing: { prerequisites: [ [Object] ], proficiencies: [] },
     subclasses: [
       {
-        index: 'evocation',
+        
         name: 'Evocation',
         url: '/api/subclasses/evocation'
       }
     ],
     spellcasting: {
       level: 1,
-      spellcasting_ability: { index: 'int', name: 'INT', url: '/api/ability-scores/int' },
+      spellcasting_ability: {  name: 'INT', url: '/api/ability-scores/int' },
       info: [ [Object], [Object], [Object], [Object], [Object], [Object] ]
     },
     spells: '/api/classes/wizard/spells',
