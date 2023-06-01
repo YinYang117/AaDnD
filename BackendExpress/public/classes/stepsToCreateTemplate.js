@@ -1,4 +1,4 @@
-/* Three steps.
+/* 3-5 steps.
   1: go to or fetch from the url you need to get info for
     IE  https://www.dnd5eapi.co/api/classes/wizard
   2: copy, paste, wrap in a string, parse it and save the result
@@ -8,6 +8,16 @@ By default, you can't view the entire console.log() JavaScript object (post json
 This is because the default behavior of the console is to display a shallow representation of the object when you log it directly.
 To overcome this we can use a technique called "console.dir()".
 By setting a depth option to null, you tell console.dir() to display the full depth of the object, avoiding the truncated display and [Object] placeholders.
+
+  4: Regex:
+  After you get it into a js obj, you can prune some of the key/value pairs out quickly by using regex.
+  index:.*?,      gets rid of index pairs, since most have a name that is exactly the same
+  type:.*?,       gets rid of type key entries with text in front of type. Most of these are obvious what types they are
+  ^\s*\n(?!\n)    gets rid of empty lines with no code
+
+  5: More pruning:
+  I ran the remainder through chatgpt to further flatten the data, prune empty arrays, objects, combine some things here and there to bring them up a level, etc.
+
 */
 
 
