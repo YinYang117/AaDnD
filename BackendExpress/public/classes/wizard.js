@@ -1,8 +1,7 @@
 const wizardClass = {
     name: 'Wizard',
     hit_die: 6,
-    skill_proficiency_choices: [
-        {
+    skill_proficiency_choices: {
             choose: 2,
             options: [
                 'Arcana',
@@ -12,8 +11,7 @@ const wizardClass = {
                 'Medicine',
                 'Religion'
             ]
-        }
-    ],
+    },
     equipment_proficiencies: [
         'Daggers',
         'Darts',
