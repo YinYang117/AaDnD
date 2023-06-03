@@ -25,7 +25,7 @@ class CharacterBase{
 
 // Characters will have the full list of details for every aspect.
 class Character extends CharacterBase{
-    constructor(name, str, dex, con, int, wis, cha){
+    constructor(name, str, dex, con, int, wis, cha, characterClass){
         super(name, str, dex, con, int, wis, cha)
     }
 
