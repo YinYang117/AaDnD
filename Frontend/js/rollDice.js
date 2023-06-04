@@ -1,12 +1,10 @@
-const rollDice = (sides, times) => {
+export const rollDice = (sides, times) => {
   let results = [];
 
   for(let i = 0; i < times; i++){
-    let num = Math.floor(Math.random() * ((sides + 1) - 1) + 1);
+    let num = Math.floor(Math.random() * sides + 1);
     results.push(num);
   }
-
-  console.log(results);
 
   return {
     results,
@@ -14,15 +12,17 @@ const rollDice = (sides, times) => {
   }   
 };
 
-const savingThrow = (min, mod, adv) => {
+export const savingThrow = (min, mod, adv) => {
   const opts = {
     true: () => Math.max(...rollDice(20, 2).results) + mod,
     false: () => Math.min(...rollDice(20, 2).results) + mod,
     undefined: () => rollDice(20, 1).total + mod
   }
+
   let res = opts[adv]();
-  console.log(`roll: ${res}, DC: ${min}`);
-  return res >= min;
+  return {
+    msg: `roll: ${res}, DC: ${min}`,
+    result: res >= min
+  }
 }
 
-console.log(savingThrow(10, 2, false));
