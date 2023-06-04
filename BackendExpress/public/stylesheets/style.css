@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
   line-height: 1.6;
-  margin: 1fr 1fr;
+  margin: 0px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
