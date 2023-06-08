@@ -1,0 +1,12 @@
+/* TODO Add site wide styles */
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f5f5f5;
+    /* Light gray */
+    padding: 20px;
+}
