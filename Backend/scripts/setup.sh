@@ -12,8 +12,6 @@ read -p "Enter a db Password:  " passwordvar
 
 echo "Continuing with password set to:  $passwordvar"
 
-#set the working dir to backend
-cd ..
 
 npm i
 
