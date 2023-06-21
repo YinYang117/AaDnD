@@ -6,22 +6,22 @@ Welcome to the Dungeons & Dragons Game project! This is a web-based application 
 
 Here's a roadmap outlining the planned features and enhancements for future releases:
 
-Step 1: Learn about atlas mongodb.
-Step 2: Setup a db with it on my local machine.
-Step 3: Successfully send data to the database and view it on the cloud.
-Step 3.5: Continue to practice formats of data exchanges.
-Step 4: Setup the backend to also use express.
-Step 5: Research React 18.
-Step 6: Setup a frontend that uses React v18. Create the folder structure needed.
-Step 7: Send some data through the frontend to the backend and store it in the database.
-Step 8: Create a detailed database.
-Step 9: Create frontend components for:
-	Splash
-	Nav bar
-	Sign up
-	Log in
-	Home
-	User’s Character Details Page
+- Step 1: Learn about atlas mongodb.
+- Step 2: Setup a db with it on my local machine.
+- Step 3: Successfully send data to the database and view it on the cloud.
+- Step 3.5: Continue to practice formats of data exchanges.
+- Step 4: Setup the backend to also use express.
+- Step 5: Research React 18.
+- Step 6: Setup a frontend that uses React v18. Create the folder structure needed.
+- Step 7: Send some data through the frontend to the backend and store it in the database.
+- Step 8: Create a detailed database.
+- Step 9: Create frontend components for:
+	- Splash
+	- Nav bar
+	- Sign up
+	- Log in
+	- Home
+	- User’s Character Details Page
 
 
 ### Version 0.1
