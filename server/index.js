@@ -9,6 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import {fileURLToPath} from "url";
 import { register } from "./controllers/auth.js"
+import authRoutes from "./routes/auth.js";
 
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
@@ -33,12 +34,17 @@ const storage = multer.diskStorage({ // documentation on npm multer page
 		cb(null, file.originalname)
 	},
 });
-const upload = multer({ storage });
+
+
 
 /* Routes with Files*/
-app.post("/auth/register", upload.single("picture"), register) // Could rename signup. Uploads User picture as a middleware before registering
+// Uploads User picture as a middleware before registering.
+const upload = multer({ storage });
+// Beause we need the upload variable from multer we dont want to move this to the other auth routes.
+app.post("/auth/register", upload.single("userAvatar"), register) 
 
 /* Mongoose Setup */
+console.log("*************", process.env)
 const PORT = process.env.PORT || 5051; // 5051 backup
 mongoose.connect(process.env.MONGO_URL, {
 	useNewUrlParser: true,
