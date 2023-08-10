@@ -37,14 +37,16 @@ const storage = multer.diskStorage({ // documentation on npm multer page
 
 
 
-/* Routes with Files*/
+/* Routes with Files */
 // Uploads User picture as a middleware before registering.
 const upload = multer({ storage });
 // Beause we need the upload variable from multer we dont want to move this to the other auth routes.
-app.post("/auth/register", upload.single("userAvatar"), register) 
+app.post("/auth/register", upload.single("userAvatar"), register)
+
+/* Routes */
+app.use("/auth", authRoutes)
 
 /* Mongoose Setup */
-console.log("*************", process.env)
 const PORT = process.env.PORT || 5051; // 5051 backup
 mongoose.connect(process.env.MONGO_URL, {
 	useNewUrlParser: true,
