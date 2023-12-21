@@ -1,4 +1,44 @@
 const path = require('path');
+/**
+ path = {
+  resolve: [Function: resolve],
+  normalize: [Function: normalize],
+  isAbsolute: [Function: isAbsolute],
+  join: [Function: join],
+  relative: [Function: relative],
+  toNamespacedPath: [Function: toNamespacedPath],
+  dirname: [Function: dirname],
+  basename: [Function: basename],
+  extname: [Function: extname],
+  format: [Function: bound _format],
+  parse: [Function: parse],
+  sep: '/',
+  delimiter: ':',
+  win32: <ref *1> {
+    resolve: [Function: resolve],
+    normalize: [Function: normalize],
+    isAbsolute: [Function: isAbsolute],
+    join: [Function: join],
+    relative: [Function: relative],
+    toNamespacedPath: [Function: toNamespacedPath],
+    dirname: [Function: dirname],
+    basename: [Function: basename],
+    extname: [Function: extname],
+    format: [Function: bound _format],
+    parse: [Function: parse],
+    sep: '\\',
+    delimiter: ';',
+    win32: [Circular *1],
+    posix: [Circular *2],
+    _makeLong: [Function: toNamespacedPath]
+  },
+  posix: [Circular *2],
+  _makeLong: [Function: toNamespacedPath]
+}
+ */
+
+console.log(path.resolve)
+
 
 module.exports = {
     config: path.resolve('config', 'database.js'),
@@ -6,3 +46,4 @@ module.exports = {
     'seeders-path': path.resolve('db', 'seeders'),
     'migrations-path': path.resolve('db', 'migrations')
 };
+// None of these exports are used in code I've written. I wonder if they're picked up automatically somewhere from some part
